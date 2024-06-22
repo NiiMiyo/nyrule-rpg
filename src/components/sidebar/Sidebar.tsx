@@ -3,6 +3,7 @@ import styles from "./Sidebar.module.scss";
 
 import Home from "@/app";
 import Personagens from "@/app/personagens";
+import Jogando from "@/app/jogando";
 
 
 export function Sidebar() {
@@ -10,6 +11,7 @@ export function Sidebar() {
 		<div>
 			<Entry page={Home.page} />
 			<Entry page={Personagens.page} />
+			<Entry page={Jogando.pagina} />
 		</div>
 	</aside>
 }
