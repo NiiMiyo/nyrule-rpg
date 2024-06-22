@@ -1,6 +1,6 @@
 import { Pagina } from "@/typing";
-import { Conhecimentos } from "./conhecimentos";
-import { Habilidades } from "./habilidades";
+import Conhecimentos from "./conhecimentos";
+import Habilidades from "./habilidades";
 
 export namespace Personagens {
 	export const page: Pagina = {
@@ -8,8 +8,8 @@ export namespace Personagens {
 		href: "/personagens",
 
 		subPaginas: [
-			Conhecimentos.page,
-			Habilidades.page
+			Conhecimentos.pagina,
+			Habilidades.pagina
 		],
 	}
 }

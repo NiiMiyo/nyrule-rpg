@@ -3,7 +3,7 @@ import RenderAcao from "../Acao";
 
 export function ListarAcoes() {
 	return <section>
-		<h2>Listar Ações</h2>
+		<h2>Ações em Combate</h2>
 		<p>
 			As Ações descritas nessa sessão podem ser usadas durante um combate por
 			qualquer personagem. Outras Ações só se tornam disponíveis através de

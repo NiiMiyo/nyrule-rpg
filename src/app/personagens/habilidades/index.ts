@@ -1,8 +1,8 @@
 import { Pagina } from "@/typing";
 
-export namespace Habilidades {
-	export const page: Pagina = {
-		nome: "Habilidades",
-		href: "/personagens/habilidades",
-	};
-}
+const pagina: Pagina = {
+	nome: "Habilidades",
+	href: "/habilidades",
+};
+
+export default { pagina };

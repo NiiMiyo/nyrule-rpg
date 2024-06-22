@@ -38,15 +38,61 @@ export default function Page_Acoes() {
 			Agilidade, os que tirarem o maior valor agem primeiro.
 		</p>
 
-		<h2>Ações em Combate</h2>
+		<ListarAcoes />
+
+		<h2>Ações fora de combate</h2>
 		<p>
-			As Ações descritas nessa sessão podem ser usadas durante um combate por
-			qualquer personagem. Outras Ações só se tornam disponíveis através de
-			Habilidades. Com a permissão do Mestre, você é livre para usar Ações
-			diferentes das descritas aqui, contanto que sejam possíveis para o seu
-			personagem.
+			Fora de combate as Ações e Reações disponíveis para cada personagem são
+			mais amplas e vagas e muitas vezes não envolvem turnos ou rodadas, mas
+			existem outras formas de medir o tempo.
+		</p>
+		<p>
+			Em cenas de exploração, por exemplo, as Ações de um personagem podem
+			representar as coisas feitas antes do dia acabar, como ir às compras,
+			buscar informações ou descansar para recuperar PVs extras naquele dia.
+			Em cenas sociais, as Ações podem representar a sua vez de responder as
+			acusações daquele nobre no tribunal.
+		</p>
+		<p>
+			Fora de combate, pode ser prudente diminuir o número de Ações que cada
+			personagem pode tomar cada vez. Por exemplo, em uma discussão cada
+			personagem pode ter apenas uma Ação por turno, em que fazem testes de
+			Conversa para convencer o oponente que sua ideia é muito melhor. Ou
+			ainda, em uma viagem muito longa, cada personagem poder executar apenas
+			uma Ação por dia de viagem. Também é possível que a quantidade de
+			rodadas de uma cena seja limitada, existe um número limite de vezes que
+			você pode tentar barganhar com um vendedor antes dele te expulsar!
 		</p>
 
-		<ListarAcoes />
+		<h2>Ações Longas</h2>
+		<p>
+			Na maioria dos casos, um personagem pode usar suas três Ações para
+			fazer três coisas diferentes, como andar, golpear e usar um item,
+			entretanto algumas atividades podem ser consideras{' '}
+			<strong>Ações Longas</strong>. Quando faz uma Ação Longa, você gasta
+			mais do que uma única Ação para executar aquela atividade. Os usos mais
+			comuns de Ações Longas são ataques com armas pesadas, conjurações de
+			magias e o uso de alguns itens.
+		</p>
+
+		<h3>Dividindo Ações Longas</h3>
+		<p>
+			As Ações de uma Ação Longa devem ser gastas em sequência, ou seja, se
+			você executar uma Ação diferente no meio de uma Ação Longa ela falhará.
+			Por exemplo, se você usa duas Ações para conjurar uma magia{" "}
+			<strong>você não pode</strong> usar a primeira Ação para começar a
+			conjuração, usar uma segunda Ação para andar e em seguida usar a sua
+			terceira Ação para terminar de conjurar a magia.
+		</p>
+		<p>
+			Entretanto, uma Ação Longa pode ser dividida, contanto que não seja
+			interrompida. Seguindo o nosso exemplo anterior,{" "}
+			<strong>você pode</strong> usar uma Ação para andar, uma segunda Ação
+			para começar a conjurar uma magia, sem finalizá-la, e então terminar
+			seu turno. A Ação restante pode ser usada para Reagir fora do seu
+			turno, mas caso isso aconteça a magia falhará, pois a Ação Longa foi
+			interrompida. No início do seu próximo turno você poderá usar uma Ação
+			para finalizar a magia.
+		</p>
 	</main>
 }

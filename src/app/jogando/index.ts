@@ -1,6 +1,7 @@
 import { Pagina } from "@/typing";
 import Acoes from "./acoes";
 import Reacoes from "./reacoes";
+import Testes from "./testes";
 
 const pagina: Pagina = {
 	nome: "Jogando",
@@ -8,6 +9,7 @@ const pagina: Pagina = {
 	subPaginas: [
 		Acoes.pagina,
 		Reacoes.pagina,
+		Testes.pagina,
 	]
 };
 
