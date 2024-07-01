@@ -8,3 +8,4 @@ export * from "./r_esquivar";
 export * from "./r_resistir_golpe";
 export * from "./r_resistir_magia";
 export * from "./r_contra_atacar";
+export * from "./r_proteger";

@@ -6,3 +6,4 @@ export { H_CONTRA_ATAQUE } from "./h_contra_ataque";
 export { H_TRANSFORMACAO_DE_BATALHA } from "./h_transformacao_de_batalha";
 export { H_VISAO_APRIMORADA } from "./h_visao_aprimorada";
 export { H_VOO } from "./h_voo";
+export { H_PROTEGER } from "./h_proteger";
