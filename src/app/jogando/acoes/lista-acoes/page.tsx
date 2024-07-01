@@ -1,6 +1,8 @@
 import ListarAcoes from "@/components/ListarAcoes";
 import ListarReacoes from "@/components/ListarReacoes";
 
+import styles from "./styles.module.scss";
+
 export default function Page_ListarAcoes() {
 	return <main>
 		<h2>Ações em Combate</h2>
@@ -11,7 +13,7 @@ export default function Page_ListarAcoes() {
 			diferentes das descritas aqui, contanto que sejam possíveis para o seu
 			personagem.
 		</p>
-		<ListarAcoes />
+		<ListarAcoes attrs={{ className: styles.listagem }} />
 
 		<h2>Reações em Combate</h2>
 		<p>
@@ -19,6 +21,6 @@ export default function Page_ListarAcoes() {
 			por qualquer personagem. Outras Reações só se tornam disponíveis
 			através de Habilidades.
 		</p>
-		<ListarReacoes />
+		<ListarReacoes attrs={{ className: styles.listagem }} />
 	</main>;
 }
