@@ -1,4 +1,4 @@
-import { CONHECIMENTOS_DADOS } from "@/data";
+import { CONHECIMENTOS_DADOS } from "@/data/conhecimentos";
 
 export default function Page_Conhecimentos() {
 	return <main>

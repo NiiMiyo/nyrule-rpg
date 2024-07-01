@@ -1,5 +1,3 @@
-import styles from "./styles.module.scss";
-
 export default function Page_Testes() {
 	return <main>
 		<h2>Testes</h2>
@@ -27,7 +25,7 @@ export default function Page_Testes() {
 		</p>
 		<p>Abaixo uma tabela para auxiliar ao definir a meta para um teste.</p>
 
-		<table className={styles.tabela_metas}>
+		<table>
 			<thead>
 				<tr>
 					<th>Meta</th>
