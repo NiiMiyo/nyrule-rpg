@@ -1,5 +1,3 @@
-import ListarAcoes from "@/components/ListarAcoes";
-
 export default function Page_Acoes() {
 	return <main>
 		<h2>Tomando Ações</h2>
@@ -37,8 +35,6 @@ export default function Page_Acoes() {
 			caso de empate, os personagens que empataram fazem outros testes de
 			Agilidade, os que tirarem o maior valor agem primeiro.
 		</p>
-
-		<ListarAcoes />
 
 		<h2>Ações fora de combate</h2>
 		<p>
@@ -93,6 +89,28 @@ export default function Page_Acoes() {
 			turno, mas caso isso aconteça a magia falhará, pois a Ação Longa foi
 			interrompida. No início do seu próximo turno você poderá usar uma Ação
 			para finalizar a magia.
+		</p>
+
+		<h2>Reagindo</h2>
+		<p>
+			Você pode usar todas as suas Ações durante o seu turno, isso significa
+			que você fez tudo o que podia assim que viu a oportunidade, mas nem
+			sempre essa pode ser a decisão mais prudente. Além de usar suas Ações
+			para agir no seu turno, é possível guardar suas Ações para agir no
+			turno de outros personagens na cena. Isso é chamado <i>Reagir</i>.
+		</p>
+
+		<p>
+			Fazer uma Reação é usar uma Ação que ainda possua como resposta a algum
+			evento fora do seu controle, como um oponente usando Golpear para te
+			atacar. Cada Reação descreve o evento em que você pode usá-la, e não
+			pode ser usada fora das condições especificadas.
+		</p>
+
+		<p>
+			Um personagem só recebe suas primeiras Ações na cena no início do seu
+			primeiro turno, isto significa que aquele personagem não poderá Reagir
+			antes de seu primeiro turno na cena.
 		</p>
 	</main>
 }

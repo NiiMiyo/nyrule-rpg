@@ -1,10 +1,11 @@
 import { CONHECIMENTOS_IDS } from "@/data";
+import { ReactNode } from "react";
 
 export type Habilidade = {
 	nome: string;
 	categoria: HabilidadeCategoria;
 	custo: number | undefined;
-	descricao: string;
+	descricao: NonNullable<ReactNode>;
 	prerequisitos?: PreRequisito[];
 
 	aprimoramentos?: Aprimoramento[];

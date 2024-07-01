@@ -45,7 +45,7 @@ export default function Page_Testes() {
 			O mesmo vale para as penalidades. Situações como se esconder em uma
 			planície sem árvores, mas com alguns arbustos, pode dar -1 ou -2 pontos
 			ao resultado do teste, enquanto situações particularmente desafiadoras,
-			como atirar com um estilingue em um passarinho há dezenas de metros em
+			como atirar com um estilingue em um passarinho a dezenas de metros em
 			um dia de vento forte, são quase impossíveis e dão grandes penalidades
 			ao teste, como -15 ou uma falha automática.
 		</p>

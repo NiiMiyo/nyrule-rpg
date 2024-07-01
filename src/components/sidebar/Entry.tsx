@@ -8,7 +8,7 @@ export default function Entry(props: Readonly<Props_Entry>) {
 	const { page, super_href } = props;
 
 	const renderSubPages = (page.subPaginas?.length ?? 0) > 0;
-	const href = super_href
+	const href = super_href !== undefined
 		? super_href + page.href
 		: page.href;
 
@@ -17,7 +17,7 @@ export default function Entry(props: Readonly<Props_Entry>) {
 
 		{ renderSubPages &&
 			<div className={styles.subentry}>
-				{ page.subPaginas!.map(sp => <Entry page={sp} key={sp.href} super_href={page.href} />) }
+				{ page.subPaginas!.map(sp => <Entry page={sp} key={sp.href} super_href={href} />) }
 			</div>
 		}
 	</div>;

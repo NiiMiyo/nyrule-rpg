@@ -1,6 +1,9 @@
 import { Habilidade, HabilidadeCategoria } from "@/typing";
 import { CONHECIMENTOS_IDS } from "../conhecimentos";
 
+import { R_CONTRA_ATACAR } from "@/data/acoes";
+import RenderAcao from "@/components/Acao";
+
 export const H_CONTRA_ATAQUE: Habilidade = {
 	nome: "Contra-Ataque",
 	custo: 5,
@@ -14,7 +17,10 @@ export const H_CONTRA_ATAQUE: Habilidade = {
 		conhecimento: CONHECIMENTOS_IDS.COMBATE,
 		valor: 8,
 	}],
-	descricao: `Você recebe a Reação Contra-Atacar: Quando usar Esquivar ou Resistir Golpe com sucesso você pode contra-atacar o oponente que o golpeou usando a Ação Golpear como se fosse uma Reação.`,
+	descricao: <>
+		Você recebe a Reação Contra-Atacar.
+		<RenderAcao acao={R_CONTRA_ATACAR} />
+	</>,
 
 	aprimoramentos: [{
 		nome: "Contra-Ataque Rápido",
@@ -28,6 +34,6 @@ export const H_CONTRA_ATAQUE: Habilidade = {
 			conhecimento: CONHECIMENTOS_IDS.COMBATE,
 			valor: 15,
 		}],
-		descricao: `A sua Reação Contra-Atacar não gasta uma Ação. Você usa apenas uma Ação para Contra-Atacar.`
+		descricao: `Uma vez por rodada, a sua Reação Contra-Atacar não gasta uma Ação.`
 	}],
 };

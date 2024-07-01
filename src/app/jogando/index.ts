@@ -1,6 +1,5 @@
 import { Pagina } from "@/typing";
 import Acoes from "./acoes";
-import Reacoes from "./reacoes";
 import Testes from "./testes";
 
 const pagina: Pagina = {
@@ -8,7 +7,6 @@ const pagina: Pagina = {
 	href: "/jogando",
 	subPaginas: [
 		Acoes.pagina,
-		Reacoes.pagina,
 		Testes.pagina,
 	]
 };

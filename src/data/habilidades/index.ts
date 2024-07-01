@@ -1,18 +1,8 @@
-import { Habilidade } from "@/typing";
-import { H_APRENDER } from "./h_aprender";
-import { H_PASSO_LIGEIRO } from "./h_passo_ligeiro";
-import { H_CONTRA_ATAQUE } from "./h_contra_ataque";
-import { H_TRANSFORMACAO_DE_BATALHA } from "./h_transformacao_de_batalha";
-import { H_VISAO_APRIMORADA } from "./h_visao_aprimorada";
-import { H_VOO } from "./h_voo";
+export * from "./gerais";
 
-export const HABILIDADES_DADOS: Habilidade[] = [
-	H_APRENDER, H_PASSO_LIGEIRO, H_CONTRA_ATAQUE, H_TRANSFORMACAO_DE_BATALHA,
-	H_VISAO_APRIMORADA, H_VOO
-].map(h => {
-	return {
-		...h,
-		aprimoramentos: h.aprimoramentos
-			?.sort((a, b) => a.nome.localeCompare(b.nome)) }
-	})
-.sort((a, b) => a.nome.localeCompare(b.nome));
+export { H_APRENDER } from "./h_aprender";
+export { H_PASSO_LIGEIRO } from "./h_passo_ligeiro";
+export { H_CONTRA_ATAQUE } from "./h_contra_ataque";
+export { H_TRANSFORMACAO_DE_BATALHA } from "./h_transformacao_de_batalha";
+export { H_VISAO_APRIMORADA } from "./h_visao_aprimorada";
+export { H_VOO } from "./h_voo";

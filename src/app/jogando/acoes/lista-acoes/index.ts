@@ -1,8 +1,8 @@
 import { Pagina } from "@/typing";
 
 const pagina: Pagina = {
-	nome: "Reações",
-	href: "/reacoes",
+	nome: "Lista de Ações e Reações",
+	href: "/lista-acoes",
 };
 
 export default { pagina };

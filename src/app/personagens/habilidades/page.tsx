@@ -1,5 +1,3 @@
-import ListarHabilidades from "@/components/ListarHabilidades";
-
 export default function Page_Habilidades() {
 	return <main>
 		<h1>Habilidades</h1>
@@ -45,7 +43,5 @@ export default function Page_Habilidades() {
 			Cada Aprimoramento só pode ser comprado uma vez, exceto quando
 			informado o contrário.
 		</p>
-
-		<ListarHabilidades />
 	</main>
 };
