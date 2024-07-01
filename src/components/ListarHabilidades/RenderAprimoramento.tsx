@@ -1,4 +1,4 @@
-import { CONHECIMENTOS_DADOS } from "@/data";
+import { CONHECIMENTOS_DADOS } from "@/data/conhecimentos";
 import { Aprimoramento } from "@/typing";
 
 export type Props_RenderAprimoramento = {

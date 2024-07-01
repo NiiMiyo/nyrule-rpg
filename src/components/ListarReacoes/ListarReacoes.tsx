@@ -1,5 +1,5 @@
 import { HTMLAttributes } from "react";
-import { REACOES_GERAIS } from "@/data";
+import { REACOES_GERAIS } from "@/data/acoes";
 import { RenderAcao } from "@/components";
 
 export function ListarReacoes( props : Readonly<Props_ListarReacoes> ) {

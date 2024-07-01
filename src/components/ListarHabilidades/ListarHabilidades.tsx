@@ -1,5 +1,5 @@
 import { HTMLAttributes } from "react";
-import { HABILIDADES_DADOS } from "@/data";
+import { HABILIDADES_DADOS } from "@/data/habilidades";
 import { RenderHabilidade } from "./RenderHabilidade";
 
 

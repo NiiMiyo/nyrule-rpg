@@ -1,4 +1,4 @@
-import { CONHECIMENTOS_DADOS } from "@/data";
+import { CONHECIMENTOS_DADOS } from "@/data/conhecimentos";
 import { Habilidade } from "@/typing";
 import { RenderAprimoramento } from "./RenderAprimoramento";
 

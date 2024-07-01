@@ -1,4 +1,4 @@
-import { CONHECIMENTOS_IDS } from "@/data";
+import { CONHECIMENTOS_IDS } from "@/data/conhecimentos";
 import { ReactNode } from "react";
 
 export type Habilidade = {
@@ -20,7 +20,7 @@ export enum HabilidadeCategoria {
 export type Aprimoramento = {
 	nome: string;
 	custo: number | undefined;
-	descricao: string;
+	descricao: NonNullable<ReactNode>;
 	prerequisitos?: PreRequisito[];
 };
 
