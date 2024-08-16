@@ -1,5 +1,5 @@
 import { Habilidade, HabilidadeCategoria } from "@/typing";
-import { CONHECIMENTOS_IDS } from "../conhecimentos";
+import { CONHECIMENTOS_IDS } from "@/data/conhecimentos";
 
 export const H_VISAO_APRIMORADA: Habilidade = {
 	nome: "Visão Aprimorada",
