@@ -8,4 +8,3 @@ export { H_VISAO_APRIMORADA } from "./h_visao_aprimorada";
 export { H_VOO } from "./h_voo";
 export { H_PROTEGER } from "./h_proteger";
 export { H_ROLAMENTO } from "./h_rolamento";
-export { H_APRENDER_MAGIA } from "./h_aprender_magia";
