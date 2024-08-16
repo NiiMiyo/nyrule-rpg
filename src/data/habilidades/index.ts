@@ -8,3 +8,5 @@ export { H_VISAO_APRIMORADA } from "./h_visao_aprimorada";
 export { H_VOO } from "./h_voo";
 export { H_PROTEGER } from "./h_proteger";
 export { H_ROLAMENTO } from "./h_rolamento";
+export { H_AUMENTO_PV } from "./h_aumento_pv";
+export { H_AUMENTO_PE } from "./h_aumento_pe"

@@ -8,8 +8,10 @@ import { H_VISAO_APRIMORADA } from "./h_visao_aprimorada";
 import { H_VOO } from "./h_voo";
 import { H_PROTEGER } from "./h_proteger";
 import { H_ROLAMENTO } from "./h_rolamento";
+import { H_AUMENTO_PV } from "./h_aumento_pv";
+import { H_AUMENTO_PE } from "./h_aumento_pe";
 
 export const HABILIDADES_DADOS = gerar_lista_habilidades([
 	H_APRENDER, H_PASSO_LIGEIRO, H_CONTRA_ATAQUE, H_TRANSFORMACAO_DE_BATALHA,
-	H_VISAO_APRIMORADA, H_VOO, H_PROTEGER, H_ROLAMENTO
+	H_VISAO_APRIMORADA, H_VOO, H_PROTEGER, H_ROLAMENTO, H_AUMENTO_PV, H_AUMENTO_PE
 ]);
