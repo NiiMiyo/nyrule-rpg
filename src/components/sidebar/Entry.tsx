@@ -12,8 +12,10 @@ export default function Entry(props: Readonly<Props_Entry>) {
 		? super_href + page.href
 		: page.href;
 
-	return <div className={styles.entry}>
-		<Link href={href}>{ page.nome }</Link>
+	return <div>
+		<Link className={styles.entry} href={href}>
+			{ page.nome }
+		</Link>
 
 		{ renderSubPages &&
 			<div className={styles.subentry}>

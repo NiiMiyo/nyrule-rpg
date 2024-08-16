@@ -8,6 +8,8 @@ import Jogando from "@/app/jogando";
 
 export function Sidebar() {
 	return <aside className={styles.bar}>
+		<h2 className={styles.index}>Índice</h2>
+
 		<div>
 			<Entry page={Home.page} />
 			<Entry page={Personagens.page} />
