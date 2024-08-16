@@ -1,19 +1,16 @@
-import { CONHECIMENTOS_DADOS } from "@/data/conhecimentos";
+import { CONHECIMENTOS_ORDENADOS } from "@/data/conhecimentos";
+import styles from "./styles.module.scss";
 
 export function ListarConhecimentos() {
 	return <section>
-		{ sorted_conhecimentos.map(({id, conhecimento}) => {
-			return <div key={id}>
-				<h2>{ conhecimento.nome }</h2>
+		{ CONHECIMENTOS_ORDENADOS.map(c => {
+			return <div key={c.id}>
 				<p>
-					{ conhecimento.descricao + " " }
-					Você usa {conhecimento.nome} para { conhecimento.usos }
+					<span className={styles.conhecimento}>{ c.conhecimento.nome }: </span>
+					{ c.conhecimento.descricao + " " }
+					Você usa { c.conhecimento.nome } para { c.conhecimento.usos }
 				</p>
 			</div>
 		}) }
 	</section>
 };
-
-const sorted_conhecimentos = Object.entries(CONHECIMENTOS_DADOS)
-	.sort(([_, a], [__, b]) => a.nome.localeCompare(b.nome))
-	.map(([id, conhecimento]) => ({ id, conhecimento }));

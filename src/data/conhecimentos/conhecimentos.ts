@@ -37,7 +37,7 @@ export const CONHECIMENTOS_DADOS: { [id in CONHECIMENTOS_IDS]: Conhecimento } = 
 	DETERMINAÇÃO: {
 		nome: "Determinação",
 		descricao: `Você tem um objetivo e ninguém te impedir.`,
-		usos: `resistir ao medo e intimidações.`,
+		usos: `resistir ao medo, intimidações e até a morte.`,
 	},
 
 	FORÇA: {
@@ -88,3 +88,10 @@ export const CONHECIMENTOS_DADOS: { [id in CONHECIMENTOS_IDS]: Conhecimento } = 
 		usos: `resistir golpes, venenos e doenças.`,
 	},
 };
+
+export const CONHECIMENTOS_ORDENADOS = Object.entries(CONHECIMENTOS_DADOS)
+	.sort(([_, a], [__, b]) => a.nome.localeCompare(b.nome))
+	.map(([id, conhecimento]) => ({
+		id: id as CONHECIMENTOS_IDS,
+		conhecimento
+	}));
