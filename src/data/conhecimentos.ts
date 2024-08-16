@@ -31,7 +31,7 @@ export const CONHECIMENTOS_DADOS: { [id in CONHECIMENTOS_IDS]: Conhecimento } = 
 	CONVERSA: {
 		nome: "Conversa",
 		descricao: `Você sabe falar o que querem ouvir.`,
-		usos: `manipular pessoas a fazer o que você quer que elas façam, seja com palavras bonitas ou com medo.`,
+		usos: `manipular pessoas, seja usando palavras bonitas ou intimidação.`,
 	},
 
 	DETERMINAÇÃO: {
@@ -43,7 +43,7 @@ export const CONHECIMENTOS_DADOS: { [id in CONHECIMENTOS_IDS]: Conhecimento } = 
 	FORÇA: {
 		nome: "Força",
 		descricao: `Sua força física bruta!`,
-		usos: `causar dano físico e aumentar carga.`,
+		usos: `causar dano físico.`,
 	},
 
 	MAGIA: {

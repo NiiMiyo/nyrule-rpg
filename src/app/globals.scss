@@ -16,10 +16,16 @@ body main {
 
 	font-size: 1.25rem;
 
+	.app-header {
+		margin-top: 1rem;
+	}
+
 	p {
-		$margin: .5rem;
+		$margin: .75rem;
 		margin-top: $margin;
 		margin-bottom: $margin;
+
+		line-height: 1.25em;
 
 		text-indent: 1.5em;
 	}
