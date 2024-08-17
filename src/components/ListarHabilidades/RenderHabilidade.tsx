@@ -1,5 +1,5 @@
 import { CONHECIMENTOS_DADOS } from "@/data/conhecimentos";
-import { Habilidade } from "@/typing";
+import { Aprimoramento, Habilidade } from "@/typing";
 import { RenderAprimoramento } from "./RenderAprimoramento";
 
 import styles from "./ListarHabilidades.module.scss";
@@ -10,10 +10,10 @@ export type Props_RenderHabilidades = {
 
 export function RenderHabilidade(props : Readonly<Props_RenderHabilidades>) {
 	const { habilidade } = props;
-	const { nome, custo, prerequisitos, descricao, aprimoramentos } = habilidade;
+	const { nome, prerequisitos, descricao, aprimoramentos } = habilidade;
 
 	return <div>
-		<h3> { nome } ({ custo ? `${custo} XP` : "XP Variável" }) </h3>
+		<h3> { nome }{ custoTexto(habilidade) } </h3>
 
 		{ prerequisitos &&
 			<p>
@@ -33,4 +33,16 @@ export function RenderHabilidade(props : Readonly<Props_RenderHabilidades>) {
 			{ aprimoramentos?.map(a => <RenderAprimoramento aprimoramento={a} key={a.nome} />) }
 		</div>
 	</div>
+}
+
+export function custoTexto(h: Habilidade | Aprimoramento): string {
+	const { custo } = h;
+
+	if (custo === undefined)
+		return " (XP Variável)";
+
+	if (custo === 0)
+		return "";
+
+	return ` (${custo} XP)`;
 }

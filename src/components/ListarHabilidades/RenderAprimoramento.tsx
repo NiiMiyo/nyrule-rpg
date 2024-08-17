@@ -1,16 +1,17 @@
 import { CONHECIMENTOS_DADOS } from "@/data/conhecimentos";
 import { Aprimoramento } from "@/typing";
+import { custoTexto } from "./RenderHabilidade";
 
 export type Props_RenderAprimoramento = {
 	aprimoramento: Aprimoramento;
 };
 
 export function RenderAprimoramento(props : Readonly<Props_RenderAprimoramento>) {
-	const { aprimoramento: habilidade } = props;
-	const { nome, custo, prerequisitos, descricao } = habilidade;
+	const { aprimoramento } = props;
+	const { nome, prerequisitos, descricao } = aprimoramento;
 
 	return <div>
-		<h4> { nome } ({ custo ? `${custo} XP` : "XP Variável" }) </h4>
+		<h4> { nome }{ custoTexto(aprimoramento) } </h4>
 
 		{ prerequisitos &&
 			<p>
@@ -24,6 +25,9 @@ export function RenderAprimoramento(props : Readonly<Props_RenderAprimoramento>)
 			</p>
 		}
 
-		<p>{ descricao }</p>
+		{ typeof descricao == "string"
+			? <p>{descricao}</p>
+			: descricao
+		}
 	</div>
 }

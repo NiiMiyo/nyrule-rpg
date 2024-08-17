@@ -4,3 +4,4 @@ export * from "./ListarHabilidades";
 export * from "./ListarReacoes";
 export * from "./Sidebar";
 export * from "./ListarConhecimentos";
+export * from "./ListaTopicos";

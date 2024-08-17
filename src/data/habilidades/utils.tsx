@@ -16,7 +16,20 @@ export function gerar_lista_habilidades(habilidades: Habilidade[]) {
 
 function ordenar_aprimoramentos(hab: Habilidade): Habilidade {
 	hab.aprimoramentos = hab.aprimoramentos
-		?.sort((a, b) => a.nome.localeCompare(b.nome));
+		?.sort((a, b) => {
+			if ( a.custo !== b.custo ) {
+				if (a.custo === 0) return -1;
+				else if (b.custo === 0) return 1;
+
+				else if (a.custo === undefined) return -1;
+				else if (b.custo === undefined) return 1;
+
+				return a.custo - b.custo;
+			}
+
+			else
+				return a.nome.localeCompare(b.nome);
+		});
 
 	return hab
 }

@@ -15,6 +15,7 @@ export enum HabilidadeCategoria {
 	GERAL = "GERAL",
 	COMBATE = "COMBATE",
 	MAGIA = "MAGIA",
+	CARACTERISTICA = "CARACTERISTICA",
 }
 
 export type Aprimoramento = {

@@ -1,4 +1,5 @@
 import { Pagina } from "@/typing";
+import ListaHabilidadesCaracteristicas from "./lista-caracteristicas";
 import ListaHabilidadesCombate from "./lista-combate";
 import ListaHabilidadesGerais from "./lista-gerais";
 
@@ -7,6 +8,7 @@ const pagina: Pagina = {
 	href: "/habilidades",
 
 	subPaginas: [
+		ListaHabilidadesCaracteristicas.pagina,
 		ListaHabilidadesGerais.pagina,
 		ListaHabilidadesCombate.pagina
 	],
