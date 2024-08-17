@@ -1,5 +1,5 @@
 import ListarHabilidades from "@/components/ListarHabilidades";
-import { HabilidadeCategoria } from "@/typing"
+import { HabilidadeCategoria } from "@/typing";
 import styles from "./styles.module.scss";
 
 ## Habilidades de Combate
@@ -8,14 +8,4 @@ As Habilidades de Combate são as mais cobiçadas pelos personagens que enfrenta
 <ListarHabilidades
     attrs={{ className: styles.listagem }}
     filtro={ h => h.categoria === HabilidadeCategoria.COMBATE }
-/>
-
----
-
-## Habilidades Gerais
-Habilidades Gerais são mais interpretativas e podem evoluir seu personagem de diferentes formas, deixando-o mais apropriado para situações sociais, de exploração e demais que não envolvem combates.
-
-<ListarHabilidades
-    attrs={{ className: styles.listagem }}
-    filtro={ h => h.categoria === HabilidadeCategoria.GERAL }
 />
