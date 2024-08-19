@@ -4,15 +4,14 @@ import { H_APRENDER } from "./h_aprender";
 import { H_PASSO_LIGEIRO } from "./h_passo_ligeiro";
 import { H_CONTRA_ATAQUE } from "./h_contra_ataque";
 import { H_TRANSFORMACAO_DE_BATALHA } from "./h_transformacao_de_batalha";
-import { H_VOO } from "./h_voo";
 import { H_PROTEGER } from "./h_proteger";
 import { H_ROLAMENTO } from "./h_rolamento";
 import { H_AUMENTO_PV } from "./h_aumento_pv";
 import { H_AUMENTO_PE } from "./h_aumento_pe";
 import { C_MEMBROS } from "./c_membros";
 import { C_VISAO } from "./c_visao";
+import { C_MOVIMENTO } from "./c_movimento";
 
 export const HABILIDADES_DADOS = gerar_lista_habilidades([
-	H_APRENDER, H_PASSO_LIGEIRO, H_CONTRA_ATAQUE, H_TRANSFORMACAO_DE_BATALHA,
-	H_VOO, H_PROTEGER, H_ROLAMENTO, H_AUMENTO_PV, H_AUMENTO_PE, C_MEMBROS, C_VISAO
+	H_APRENDER, H_PASSO_LIGEIRO, H_CONTRA_ATAQUE, H_TRANSFORMACAO_DE_BATALHA, H_PROTEGER, H_ROLAMENTO, H_AUMENTO_PV, H_AUMENTO_PE, C_MEMBROS, C_VISAO, C_MOVIMENTO,
 ]);
