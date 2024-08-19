@@ -21,7 +21,7 @@ export const C_MOVIMENTO: Habilidade = {
 		nome: "Movimentos alternativos",
 		custo: undefined,
 		descricao: <>
-			<p>Você pode se mover de diferentes formas. Você recebe "Movimento comum" e pode escolher entre qualquer quantidade de tipos de movimentos adicionais da seguir e pagar seu custo em XP.</p>
+			<p>Você pode se mover de diferentes formas. Você recebe "Movimento comum" e pode escolher entre qualquer quantidade de tipos de movimentos adicionais da lista a seguir e pagar seu custo em XP.</p>
 
 			<ListaTopicos tipoDeLista="p" ordenar topicos={[{
 				titulo: "Aéreo (+4 XP)",
