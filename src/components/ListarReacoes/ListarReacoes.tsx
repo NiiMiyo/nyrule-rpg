@@ -1,6 +1,6 @@
 import { HTMLAttributes } from "react";
 import { REACOES_GERAIS } from "@/data/acoes";
-import { RenderAcao } from "@/components";
+import RenderAcao from "@/components/RenderAcao";
 
 export function ListarReacoes( props : Readonly<Props_ListarReacoes> ) {
 	return <section {...props.attrs} >

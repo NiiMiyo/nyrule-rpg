@@ -5,3 +5,8 @@ export function equalsIgnoreCase(a: string, b: string): boolean {
 export function includesIgnoreCase(outer: string, inner: string): boolean {
 	return outer.toLocaleUpperCase().includes(inner.toLocaleUpperCase());
 }
+
+export default {
+	includesIgnoreCase,
+	equalsIgnoreCase,
+};

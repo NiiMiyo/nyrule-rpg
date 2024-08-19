@@ -1,6 +1,6 @@
 import { Habilidade, HabilidadeCategoria } from "@/typing";
 import { CONHECIMENTOS_DADOS } from "@/data/conhecimentos";
-import { ListaTopicos } from "@/components";
+import ListaTopicos from "@/components/ListaTopicos";
 
 
 export const C_VISAO: Habilidade = {

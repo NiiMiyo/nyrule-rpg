@@ -1,6 +1,6 @@
 import { HTMLAttributes } from "react";
 import { ACOES_GERAIS } from "@/data/acoes";
-import { RenderAcao } from "@/components";
+import RenderAcao from "@/components/RenderAcao";
 
 export function ListarAcoes( props : Readonly<Props_ListarAcoes> ) {
 	return <section {...props.attrs}>

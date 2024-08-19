@@ -1,4 +1,4 @@
-import { RenderAcao } from "@/components";
+import RenderAcao from "@/components/RenderAcao";
 import { Acao, Habilidade } from "@/typing";
 
 export function conceder_acao(acao: Acao): JSX.Element {
