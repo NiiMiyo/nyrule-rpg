@@ -5,7 +5,7 @@ export const C_MEMBROS: Habilidade = {
 	nome: "Membros",
 	custo: 0,
 	categoria: HabilidadeCategoria.CARACTERISTICA,
-	descricao: "Define quantos itens seu personagem pode manipular simultaneamente. Apesar do nome desta característica, você é livre para decidir como esses itens são manipulados, através de braços, bocas, tentáculos, telecinese...",
+	descricao: "Define quantos itens seu personagem pode manipular simultaneamente. Apesar do nome desta característica, você é livre para decidir como esses itens são manipulados, através de mãos, bocas, tentáculos, telecinese...",
 
 	aprimoramentos: [{
 		nome: "Um membro",

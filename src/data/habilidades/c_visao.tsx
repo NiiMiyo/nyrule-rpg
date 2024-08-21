@@ -23,7 +23,7 @@ export const C_VISAO: Habilidade = {
 		custo: undefined,
 		descricao: <>
 			<p>
-				Você tem seu senso de visão reduzido de alguma forma. Escolha entre as penalidades a seguir. Você recebe 1 XP adicional para um que escolher até um limite de 2 XP, mas pode escolher mais opções sem XP adicional.
+				Você tem seu senso de visão reduzido de alguma forma. Escolha entre as penalidades a seguir. Você recebe 1 XP adicional para cada um que escolher até um limite de 2 XP, mas pode escolher mais opções sem XP adicional.
 			</p>
 
 			<ListaTopicos tipoDeLista="p" ordenar topicos={[{
