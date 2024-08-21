@@ -1,10 +1,10 @@
 import Link from "next/link";
-import styles from "./Sidebar.module.scss";
+import styles from "./Indice.module.scss";
 
 import { Pagina } from "@/typing";
 
 
-export default function Entry(props: Readonly<Props_Entry>) {
+export default function Entrada(props: Readonly<Props_Entry>) {
 	const { page, super_href } = props;
 
 	const renderSubPages = (page.subPaginas?.length ?? 0) > 0;
@@ -19,7 +19,7 @@ export default function Entry(props: Readonly<Props_Entry>) {
 
 		{ renderSubPages &&
 			<div className={styles.subentry}>
-				{ page.subPaginas!.map(sp => <Entry page={sp} key={sp.href} super_href={href} />) }
+				{ page.subPaginas!.map(sp => <Entrada page={sp} key={sp.href} super_href={href} />) }
 			</div>
 		}
 	</div>;
