@@ -11,3 +11,4 @@ export { H_AUMENTO_PE } from "./h_aumento_pe"
 export { C_MEMBROS } from "./c_membros";
 export { C_VISAO } from "./c_visao";
 export { C_MOVIMENTO } from "./c_movimento";
+export { C_METABOLISMO } from "./c_metabolismo";

@@ -11,7 +11,8 @@ import { H_AUMENTO_PE } from "./h_aumento_pe";
 import { C_MEMBROS } from "./c_membros";
 import { C_VISAO } from "./c_visao";
 import { C_MOVIMENTO } from "./c_movimento";
+import { C_METABOLISMO } from "./c_metabolismo";
 
 export const HABILIDADES_DADOS = gerar_lista_habilidades([
-	H_APRENDER, H_PASSO_LIGEIRO, H_CONTRA_ATAQUE, H_TRANSFORMACAO_DE_BATALHA, H_PROTEGER, H_ROLAMENTO, H_AUMENTO_PV, H_AUMENTO_PE, C_MEMBROS, C_VISAO, C_MOVIMENTO,
+	H_APRENDER, H_PASSO_LIGEIRO, H_CONTRA_ATAQUE, H_TRANSFORMACAO_DE_BATALHA, H_PROTEGER, H_ROLAMENTO, H_AUMENTO_PV, H_AUMENTO_PE, C_MEMBROS, C_VISAO, C_MOVIMENTO, C_METABOLISMO,
 ]);
