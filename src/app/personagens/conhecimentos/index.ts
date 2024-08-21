@@ -1,8 +1,0 @@
-import { Pagina } from "@/typing";
-
-const pagina: Pagina = {
-	nome: "Conhecimentos",
-	href: "/conhecimentos",
-};
-
-export default { pagina };
