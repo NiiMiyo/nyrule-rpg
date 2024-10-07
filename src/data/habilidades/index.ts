@@ -12,3 +12,5 @@ export { C_MEMBROS } from "./c_membros";
 export { C_VISAO } from "./c_visao";
 export { C_MOVIMENTO } from "./c_movimento";
 export { C_METABOLISMO } from "./c_metabolismo";
+export { H_APRENDER_MAGIA } from "./h_aprender_magia";
+export { H_AO_ACASO } from "./h_ao_acaso";
