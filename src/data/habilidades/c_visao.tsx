@@ -31,7 +31,7 @@ export const C_VISAO: Habilidade = {
 				texto: `Você recebe -5 em testes de ${CONHECIMENTOS_DADOS.OBSERVAÇÃO.nome} para enxergar.`
 			}, {
 				titulo: "Daltonismo",
-				texto: "Você tem dificuldade para distinguir certas cores. Entre em acordo com o mestre deve decidir em quais situações você é capaz ou não de enxergar certas cores."
+				texto: "Você tem dificuldade para distinguir certas cores. Entre em acordo com o mestre para decidir em quais situações você é capaz ou não de enxergar certas cores."
 			}, {
 				titulo: "Cegueira noturna",
 				texto: "Quando estiver em penumbra você recebe as mesmas penalidade de estar no escuro."
