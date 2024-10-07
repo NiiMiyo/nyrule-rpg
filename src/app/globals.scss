@@ -51,6 +51,10 @@ body main {
 	ul {
 		list-style-type: disc;
 		list-style-position: inside;
+
+		ul {
+			padding-left: 2rem;
+		}
 	}
 }
 
