@@ -1,18 +1,20 @@
-Um personagem é uma criatura com Conhecimentos, Habilidades e alguns outros atributos.
+Um "personagem" é qualquer entidade relevante para a cena que se passa no jogo. Isso inclui as pessoas envolvidas, mas também objetos importantes. Por exemplo, em um combate entre dois magos, cada um deles conta como um personagem, totalizando dois personagens na cena. Se um desses magos deseja lançar uma magia no cajado do outro, para derrubá-lo por exemplo, o próprio cajado se torna um personagem nessa cena, pois ele também se torna uma entidade relevante.
 
 ## Atributos de personagens
-Um personagem possui atributos que definem tudo que este personagem pode fazer e seu nível em determinadas habilidades.
+A maioria dos personagens, em particular os que possuem algum tipo de consciência, como pessoas, animais e monstros, possuem atributos que definem seu estado atual, o que podem fazer e seu nível em determinadas habilidades.
 
 ### Conhecimentos
-Conhecimentos definem quão bom seu personagem é em determinas áreas de conhecimento, como Combate, Magia, Observação e Força. Para mais detalhes, veja [Conhecimentos](./personagens/conhecimentos).
+Conhecimentos definem quão bom o personagem é em determinas áreas de conhecimento, como Combate, Magia, Observação e Força. Para mais detalhes, veja [Conhecimentos](./personagens/conhecimentos).
 
 ### Habilidades
-Habilidades indicarão suas capacidades dentro do mundo do jogo. Para mais detalhes, veja [Habilidades](./personagens/habilidades).
+Habilidades indicarão as capacidades do personagem dentro do mundo do jogo, determinando o que ele é capaz de fazer. Para mais detalhes, veja [Habilidades](./personagens/habilidades).
 
 ### PV
 Os Pontos de Vida (abreviados como PV) são a medida da saúde física do personagem. Cada personagem inicia com 5 PV máximo e pode aumentá-los através de Habilidades. Você perde PV ao receber dano de qualquer fonte e recupera 1 PV cada vez que descansar por oito horas ininterruptas.
 
 Certos efeitos podem conceder PV temporário. Sempre que perder PV, você perde primeiro seus pontos temporários e só perde seus PV normais se não possuir nenhum ponto temporário.
+
+Essas características são padrão para a maioria dos personagens, mas certos personagens podem ter regras diferentes. Por exemplo, uma espada pode ter menos de 5 PV e ser incapaz de descansar, portanto precisa ser consertada por um ferreiro ou por uma magia para recuperar seus PV.
 
 ### PE
 Os Pontos de Estamina (abreviados como PE) são a medida de energia do personagem. Cada personagem inicia com 3 PE máximo e pode aumentá-los através de Habilidades. Você gasta PE para ativar algumas habilidades e lançar magias.
