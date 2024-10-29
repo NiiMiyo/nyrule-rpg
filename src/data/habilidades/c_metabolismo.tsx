@@ -15,9 +15,9 @@ export const C_METABOLISMO: Habilidade = {
 		descricao: <>
 			<p>Você só consegue respirar no ar puro. Pequenas impurezas no ar não o atrapalham, mas estar em fumaça densa, certos gases ou submerso o fazem sufocar. Cada vez que iniciar seu turno enquanto sufoca, faça um teste de {CONHECIMENTOS_DADOS.VIGOR.nome} com meta 5 para resistir. Se passar, pode agir normalmente, mas aumente a meta do próximo teste em 2 para cada vez que passou anteriormente. Se falhar, cai inconsciente e perde 1 PV por turno enquanto sufoca.</p>
 
-			<p>Você precisa comer e beber água. Para cada dia que não tiver acesso à comida ou água potável, faça um teste de {CONHECIMENTOS_DADOS.VIGOR.nome} com meta 10. Reduza o seu PV máximo em 2 para cada teste que você falhou e aumente a meta dos próximos testes em 3. Seu PV máximo volta ao normal assim que tiver acesso à comida e água potável novamente por um dia. Se seu PV máximo chegar a zero você morre.</p>
+			<p>Você precisa comer e beber água. Para cada dia que não tiver acesso à comida ou água potável, faça um teste de {CONHECIMENTOS_DADOS.VIGOR.nome} com meta 10. Reduza o seu PV máximo em 2 para cada teste que você falhou e aumente a meta dos próximos testes em 3, mesmo em caso de sucesso. Seu PV máximo volta ao normal assim que tiver acesso à comida e água potável novamente por um dia inteiro. Se seu PV máximo chegar a zero você morre por inanição.</p>
 
-			<p>Você precisa dormir pelo menos oito horas por dia. Para cada dia que passar sem dormir, faça um teste de {CONHECIMENTOS_DADOS.VIGOR.nome} com meta 10. Reduza seu PE máximo em 2 para cada teste que você falhou e aumente a meta dos próximos testes em 4. Seu PE máximo volta ao normal assim que dormir por oito horas mais duas horas por cada dia que passou sem dormir. Se seu PE máximo chegar a zero você cai inconsciente e só pode ser acordado após dormir o tempo que precisa para recuperar seu PE máximo.</p>
+			<p>Você precisa dormir pelo menos oito horas por dia, das quais pelo menos cinco horas precisam ser ininterruptas, enquanto as demais podem ser divididas durante o dia. Quando completa seu sono, recupera 1 PV. Para cada dia que passar sem dormir, faça um teste de {CONHECIMENTOS_DADOS.VIGOR.nome} com meta 10. Reduza seu PE máximo em 2 para cada teste que você falhou e aumente a meta dos próximos testes em 4. Seu PE máximo volta ao normal assim que dormir por oito horas mais duas horas por cada dia que passou sem dormir. Se seu PE máximo chegar a zero você cai inconsciente e só pode ser acordado após dormir o tempo que precisa para recuperar seu PE máximo. Se dormir pelo menos metade do tempo que precisa, não recupera PV, mas não precisa fazer testes por não dormir ou, se já estiver fazendo os testes, a Meta do teste não aumenta para os próximos dias.</p>
 		</>
 	}, {
 		nome: "Metabolismo alternativo",
@@ -33,7 +33,7 @@ export const C_METABOLISMO: Habilidade = {
 				texto: "Você também pode respirar enquanto estiver submerso em água limpa, sem sufocar."
 			}, {
 				titulo: "Fotossíntese (+1 XP)",
-				texto: "Você não precisa comer ou beber. Em vez disso, precisa apenas de acesso à luz do sol diariamente. Se não receber luz direta do sol, sofre os efeitos que sofreria pela fome."
+				texto: "Você não precisa comer ou beber. Em vez disso, precisa apenas de acesso à luz do sol diariamente. Se não receber luz direta do sol por pelo menos seis horas ao dia, sofre os efeitos que sofreria pela fome."
 			}, {
 				titulo: "Insone (+2 XP)",
 				texto: "Você não precisa dormir e se torna incapaz de sofrer os efeitos do sono. Outros efeitos ainda podem deixá-lo inconsciente."
@@ -46,6 +46,15 @@ export const C_METABOLISMO: Habilidade = {
 			}, {
 				titulo: "Autossustentável (+2 XP)",
 				texto: "Você não precisa comer ou beber e se torna incapaz de sofrer os efeitos da fome.",
+			}, {
+				titulo: "Hipossonia (+1 XP)",
+				texto: "Você precisa dormir apenas quatro horas ininterruptas por dia."
+			}, {
+				titulo: "Transe (+1 XP)",
+				texto: "Quando dorme, na verdade apenas entra em um transe próprio para descanso, fazendo com que não sofra penalidades de estar inconsciente enquanto dorme."
+			}, {
+				titulo: "Hipersônia (-1 XP)",
+				texto: "Você precisa dormir pelo menos dezesseis horas por dia, das quais pelo menos dez sejam ininterruptas."
 			}]} />
 		</>
 	}]
