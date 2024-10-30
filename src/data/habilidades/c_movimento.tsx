@@ -25,7 +25,7 @@ export const C_MOVIMENTO: Habilidade = {
 
 			<ListaTopicos tipoDeLista="p" ordenar topicos={[{
 				titulo: "Aéreo (+4 XP)",
-				texto: `Quando ${A_ANDAR.nome} pode usar uma de suas unidades de movimento para se deslocar uma unidade na vertical, para cima ou para baixo. Sempre que terminar seu turno fora do chão você gasta 1 PE. Durante seu turno você também pode cair em queda livre a qualquer momento sem gastar uma Ação.`
+				texto: `Quando ${A_ANDAR.nome} pode usar uma de suas unidades de movimento para se deslocar uma unidade na vertical, para cima ou para baixo. Durante seu turno você também pode cair em queda livre a qualquer momento sem gastar uma Ação.`
 			}, {
 				titulo: "Aquático (+2 XP)",
 				texto: `Para nadar você gasta unidades normalmente, ao invés de dobradas.`

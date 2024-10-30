@@ -10,13 +10,14 @@ export const H_TRANSFORMACAO_DE_BATALHA: Habilidade = {
 	prerequisitos: [{
 		tipo: "conhecimento",
 		conhecimento: CONHECIMENTOS_IDS.COMBATE,
-		valor: 5,
+		valor: 4,
 	}],
 	descricao: conceder_acao(A_FORMA_DE_BATALHA),
 
 	aprimoramentos: [{
 		nome: "Aprimorar Transformação",
 		custo: 1,
-		descricao: `Enquanto estiver transformado, você recebe +1 no acerto e dano de todos os seus ataques não-mágicos. Você pode comprar esse Aprimoramento várias vezes, mas aumente seu custo em 1 XP para cada compra anterior.`
+		prerequisitos: [{ tipo: "conhecimento", conhecimento: CONHECIMENTOS_IDS.COMBATE, valor: 6 }],
+		descricao: `Aumente os bônus da transformação em +1. Você pode comprar esse Aprimoramento várias vezes, mas aumente seu pré-requisito em 2 para cada compra anterior.`
 	}],
 };
